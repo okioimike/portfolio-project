@@ -71,12 +71,16 @@
 
 
             <div class="col">
-              <div class="card shadow-sm">
+              <a href="{% url 'detail' job.id %}">
+                <div class="card shadow-sm">
                 <img class="bd-placeholder-img card-img-top" src="{{ job.image.url }}" height="250">
                 <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
+                  <p class="card-text">
+                      {{ job.summary }}
+                  </p>
                 </div>
               </div>
+              </a>
             </div>
               {% endfor %}
           </div>
