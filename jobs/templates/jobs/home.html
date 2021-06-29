@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,8 +56,9 @@
             <p class="lead text-muted">Hi my name is Okioi Michael I enjoy developing software</p>
             <p>
               <a href="mailto:okioibonyi@gmail.com" class="btn btn-primary my-2">Email me</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              <a href="https://twitter.com/michael_okioi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @michael_okioi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </p>
+            <img src="{% static 'okioi.jpg' %}" height="200">
           </div>
         </div>
       </section>
